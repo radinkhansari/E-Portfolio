@@ -4,16 +4,28 @@ import { NotFound } from './pages/NotFound.jsx'
 
 //import { BrowserRouter } from "react-router-dom";
 
+// export default function App() {
+//   return (
+//     <BrowserRouter>
+//       <Routes>
+//         <Route index element={<Home />} />
+//         <Route path="*" element={<NotFound />} />
+//       </Routes>
+//     </BrowserRouter>
+//   )
+// }
+
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/E-Portfolio">
       <Routes>
-        <Route index element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   )
 }
+
 
 //export default App
 

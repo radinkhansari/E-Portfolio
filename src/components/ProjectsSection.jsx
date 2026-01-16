@@ -1,11 +1,13 @@
 import { ArrowRight, ExternalLink, Github } from "lucide-react";
+//image: import.meta.env.BASE_URL + "projects/premier-league-model.png"
+
 
 const projects = [
     {
         id: 1,
         title : "SaaS Landing Page",
         description : "A beautidul landing page app using React and Tailwind",
-        image: "/projects/premier leauge model.png",
+        image: "Screenshot.png",//"projects/premierleaugemodel.png",
         tags: ["React" , "TailwindCSS" , "Supabase"],
         demoUrl: "#", //add this later
         githubUrl: "#" //add this later
