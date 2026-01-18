@@ -1,30 +1,88 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
- import { Home } from './pages/Home.jsx'
-import { NotFound } from './pages/NotFound.jsx'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Home } from "./pages/Home.jsx";
+import { NotFound } from "./pages/NotFound.jsx";
 
-//import { BrowserRouter } from "react-router-dom";
+export default function App() {
+  return (
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </BrowserRouter>
+  );
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // this was the previous one
+// import { BrowserRouter, Routes, Route } from 'react-router-dom'
+//  import { Home } from './pages/Home.jsx'
+// import { NotFound } from './pages/NotFound.jsx'
+
+// //import { BrowserRouter } from "react-router-dom";
+
+// // export default function App() {
+// //   return (
+// //     <BrowserRouter>
+// //       <Routes>
+// //         <Route index element={<Home />} />
+// //         <Route path="*" element={<NotFound />} />
+// //       </Routes>
+// //     </BrowserRouter>
+// //   )
+// // }
 
 // export default function App() {
 //   return (
-//     <BrowserRouter>
+//     <BrowserRouter basename="/E-Portfolio">
 //       <Routes>
-//         <Route index element={<Home />} />
+//         <Route path="/" element={<Home />} />
 //         <Route path="*" element={<NotFound />} />
 //       </Routes>
 //     </BrowserRouter>
 //   )
 // }
 
-export default function App() {
-  return (
-    <BrowserRouter basename="/E-Portfolio">
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-    </BrowserRouter>
-  )
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 //export default App
